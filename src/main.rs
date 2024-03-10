@@ -1,6 +1,7 @@
 use async_trait::async_trait;
 use pingora::prelude::*;
 use std::sync::Arc;
+use pingora_snow::*;
 
 pub struct LB(Arc<LoadBalancer<RoundRobin>>);
 
