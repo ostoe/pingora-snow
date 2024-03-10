@@ -24,6 +24,7 @@ impl ProxyHttp for LB {
 
         // Set SNI to one.one.one.one
         let peer = Box::new(HttpPeer::new(upstream, false, "one.one.one.one".to_string()));
+        
         Ok(peer)
     }
 
